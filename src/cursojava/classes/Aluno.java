@@ -1,22 +1,15 @@
 package cursojava.classes;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 import cursojava.constantes.StatusAluno;
 
-public class Aluno {
-	private String nome;
-	private int idade;
-	private String dataNascimento;
-	private String registroGeral;
-	private String numeroCpf;
-	private String nomePai;
+public class Aluno extends Pessoa {
+
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-
 	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 
 	/* Métodos getters e setters */
@@ -110,9 +103,9 @@ public class Aluno {
 		double somaNotas = 0.0;
 		for (Disciplina disciplina : disciplinas) {
 			somaNotas += disciplina.getNota();
-			
+
 		}
-		return somaNotas / disciplinas.size(); //size verifica o qtd de itens na lista ou "tamanho" da mesma
+		return somaNotas / disciplinas.size(); // size verifica o qtd de itens na lista ou "tamanho" da mesma
 	}
 
 	public boolean getAlunoAprovado() {
@@ -123,16 +116,16 @@ public class Aluno {
 			return false;
 		}
 	}
-	
-	public String getAlunoAprovado2() { //utilizando constantes
+
+	public String getAlunoAprovado2() { // utilizando constantes
 		double media = this.getMediaNota();
-		if( media >= 50) {
-			if(media >=70) {
+		if (media >= 50) {
+			if (media >= 70) {
 				return StatusAluno.APROVADO;
-			}else {
+			} else {
 				return StatusAluno.RECUPERACAO;
 			}
-		}else {
+		} else {
 			return StatusAluno.REPROVADO;
 		}
 	}
@@ -168,7 +161,5 @@ public class Aluno {
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomePai=" + nomePai + ", dataMatricula="
 				+ dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado + "]";
 	}
-
-	
 
 }

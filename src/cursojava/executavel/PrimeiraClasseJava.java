@@ -19,7 +19,7 @@ public class PrimeiraClasseJava {
 		 * List<Aluno> alunosAprovados = new ArrayList<Aluno>(); // criando a lista de
 		 * alunos Aprovados List<Aluno> alunosReprovados = new ArrayList<Aluno>(); //
 		 * criando a lista de alunos Reprovados List<Aluno> alunosRecuperacao = new
-		 * ArrayList<Aluno>(); // criando a lista de alunos em Recuperação
+		 * ArrayList<Aluno>(); // criando a lista de alunos em Recuperaddão
 		 */
 
 		/*
@@ -84,12 +84,10 @@ public class PrimeiraClasseJava {
 		/*
 		 * 
 		 * for (int pos = 0; pos < alunos.size(); pos++) {//percorrendo a lista por
-		 * posição
-		 * f
-		 * Aluno aluno = alunos.get(pos); System.out.println(aluno.toString());
-		 * System.out.println("Média: " + aluno.getMediaNota());
-		 * System.out.println("Resultado: " +aluno.getAlunoAprovado2());
-		 * System.out.println(
+		 * posição f Aluno aluno = alunos.get(pos);
+		 * System.out.println(aluno.toString()); System.out.println("Média: " +
+		 * aluno.getMediaNota()); System.out.println("Resultado: "
+		 * +aluno.getAlunoAprovado2()); System.out.println(
 		 * "--------------------------------------------------------------------------")
 		 * ; }
 		 */
