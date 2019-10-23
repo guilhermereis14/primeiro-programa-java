@@ -85,7 +85,7 @@ public class PrimeiraClasseJava {
 		 * 
 		 * for (int pos = 0; pos < alunos.size(); pos++) {//percorrendo a lista por
 		 * posição
-		 * 
+		 * f
 		 * Aluno aluno = alunos.get(pos); System.out.println(aluno.toString());
 		 * System.out.println("Média: " + aluno.getMediaNota());
 		 * System.out.println("Resultado: " +aluno.getAlunoAprovado2());
