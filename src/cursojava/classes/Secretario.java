@@ -1,9 +1,12 @@
 package cursojava.classes;
 
-public class Secretario extends Pessoa {
+import cursojava.interfaces.PermitrAcesso; //importando a interface criada "PermitrAcesso"
+
+public class Secretario extends Pessoa implements PermitrAcesso {
 	private String registro;
 	private String nivelCargo;
 	private String experiencia;
+	
 
 	public String getRegistro() {
 		return registro;
@@ -36,7 +39,14 @@ public class Secretario extends Pessoa {
 				+ numeroCpf + ", registroGeral=" + registroGeral + ", nomePai=" + nomePai + ", nomeMae=" + nomeMae
 				+ "]";
 	}
-	
-	
+
+	/*
+	 * Método do contrato de autenticação
+	 */
+	@Override
+	public boolean autenticar(String login, String senha) {
+		// TODO Auto-generated method stub
+		return login.equals("admin") && senha.equals("admin");
+	}
 
 }
